@@ -1,0 +1,328 @@
+
+/*******************************************
+GENERAL
+********************************************/
+/** {
+  box-sizing: border-box;
+}*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#wrapper {
+  max-width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+h3 {
+  margin: 0 0 1em 0;
+  text-align: center;
+  color: #05253f;
+}
+
+p {
+    text-align: center;
+}
+
+/*******************************************
+Heading
+********************************************/
+
+header {
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#first {
+  background-color: #fafafa;
+}
+
+.logo {
+  text-align: center;
+  margin: 0;
+  font-size: 1.25em;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: 800;
+  line-height: 0.8em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+/*******************************************
+Navigation
+********************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  width: 100%;
+}
+
+nav a {
+  display: block;
+  font-weight: 800;
+  padding: 15px 10px;
+  margin: 10px 10px;
+}
+
+/*******************************************
+Footer
+********************************************/
+
+.footer {
+  font-size: 1em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  overflow: auto;
+}
+
+.footer h1 {
+    padding-bottom: 1em;
+}
+
+.anchor a,
+.anchor p,
+.footer h1 {
+    font-size: 1.25em;
+}
+
+.anchor {
+    overflow: auto;
+    border-top: 1px solid darkgray;
+    max-width: 80%;
+    margin: auto;
+}
+
+.anchor ul li {
+    display: inline-block;
+    overflow: auto;
+    padding-left: 0;
+}
+
+
+/*******************************************
+PAGE: Home
+********************************************/
+
+.profile {
+  display: block;
+  max-width: 100%;
+  margin: 2.5%;
+}
+
+.profile p {
+    text-align: center;
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+
+.profile img {
+    display: block;
+    margin: auto;
+    max-width: 75%;
+}
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery h1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.55em;
+    color: #3b474b;
+}
+
+#gallery li {
+  display: block;
+  width: 98.5%;
+  margin: auto;
+
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+}
+
+
+/*******************************************
+Colors
+********************************************/
+
+/* Site Body */
+body {
+  background-color: #dedede;
+  color: #9c8b8f;
+}
+
+/* purple header */
+header {
+  background: #fafafa;
+}
+
+
+nav li {
+  background-color: #dedede;
+}
+
+
+p {
+  color: #acaebd;
+}
+
+/* links */
+a {
+  color: #47505a;
+}
+
+/* nav link */
+nav a, nav a:visited {
+ color: #acaebd;
+}
+
+/* selected nav link */
+nav .selected, nav a:hover {
+  color: #404040 ;
+}
+
+/* Portfolio of Images */
+#gallery li {
+      color: #bdc3c7;
+}
+
+#gallery li a p {
+      color: #bdc3c7;
+}
+
+/* Footer */
+.footer {
+  background-color: #fafafa;
+  color: #ccc;
+}
+
+
+/*******************************************
+Media Queries
+********************************************/
+
+@media screen and (min-width: 485px) {
+
+#first {
+ background-color: #fafafa;
+}
+
+nav {
+ padding: 0;
+ margin: 0;
+ overflow:auto;
+}
+
+nav li {
+ display: inline-block;
+ max-width: 20%;
+ background-color: #fafafa;
+}
+
+.profile {
+ overflow: auto;
+}
+
+.profile img {
+ display:block;
+ float: right;
+ clear: both;
+ max-width: 45%;
+ padding: 2.5%;
+ margin: auto;
+ 
+}
+
+.profile p {
+ display:block;
+ max-width: 60%;
+ text-align: left;
+}
+
+
+#gallery li {
+ float:left;
+ max-width: 45%;
+ padding: 2.5%;
+}
+
+#gallery li:nth-child( 3 ) {
+    clear: left;
+}
+
+}
+
+@media screen and (min-width: 900px) {
+
+.logo {
+  display: block;
+  float: left;
+  max-width: 30%;
+  margin-left: 1em;
+}
+
+nav {
+  float: right;
+}
+
+/* link spacing */     
+nav li {
+  margin: 0 20px;
+  padding: 0 10px;
+}
+
+header {
+  overflow: auto;
+}
+
+/*Gallery spacing*/
+#gallery li {
+    max-width: 30%;
+    padding: 1.5%;
+    position: relative;
+}
+
+}
+
