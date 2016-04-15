@@ -2,9 +2,9 @@
 /*******************************************
 GENERAL
 ********************************************/
-/** {
+* {
   box-sizing: border-box;
-}*/
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -32,6 +32,16 @@ h3 {
 
 p {
     text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix {
+    background-color:red;
 }
 
 /*******************************************
@@ -114,6 +124,14 @@ Footer
     padding-bottom: 1em;
 }
 
+.footl {
+    float: left;
+}
+
+.footr ul a {
+    float:right;
+}
+
 .anchor a,
 .anchor p,
 .footer h1 {
@@ -124,14 +142,8 @@ Footer
     overflow: auto;
     border-top: 1px solid darkgray;
     max-width: 80%;
-    margin: auto;
 }
 
-.anchor ul li {
-    display: inline-block;
-    overflow: auto;
-    padding-left: 0;
-}
 
 
 /*******************************************
@@ -160,6 +172,7 @@ PAGE: Home
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: auto;
 }
 
 #gallery h1 {
@@ -288,9 +301,10 @@ nav li {
  padding: 2.5%;
 }
 
-#gallery li:nth-child( 3 ) {
-    clear: left;
+.empty {
+    padding-left: 6em;
 }
+
 
 }
 
@@ -318,11 +332,14 @@ header {
 }
 
 /*Gallery spacing*/
+
 #gallery li {
     max-width: 30%;
     padding: 1.5%;
-    position: relative;
 }
+
+
 
 }
 
+/*need to know how to add new or different info in a media querie (eg-footer links)*/
